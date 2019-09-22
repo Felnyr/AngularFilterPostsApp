@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row">
+      <div *ngFor="let post of postsArr let i = index" class="col-md-4">
+          <app-post-item [post]="postsArr[i]" [siblingData]="siblingInput"></app-post-item>
+      </div>
+  </div>
+</div>
